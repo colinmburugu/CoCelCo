@@ -70,7 +70,7 @@ def prediction(request):
         index = str((sum(vars) * 100)/80)
 
         df = pd.DataFrame([data],columns= cols)
-        model = joblib.load('myapp/rfc.sav')        
+        model = joblib.load('myapp/rfc2.sav')        
         arr = np.array(data)
         classification = model.predict(df)
 
